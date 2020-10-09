@@ -20,6 +20,7 @@ function Loading(){
               <img  src={studyicons} alt='Estudar'/>
               Estudar
           </Link>
+          
           <Link to='give-form' className='give-classes'>
               <img  src={give} alt='da-aula'/>
               Dar Aula
