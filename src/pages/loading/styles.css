@@ -1,0 +1,117 @@
+#page-loading{
+ width: 100vw;
+ height: 100vh;
+
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+ color: var(--color-text-in-primary);
+background: var(--color-primary);
+
+
+}
+
+.logo-conteiner img{
+height: 9rem;
+
+}
+.hero-image{
+    width: 100%;
+    
+}
+.logo-conteiner{
+    text-align: center;
+    margin-bottom:3.2rem;
+}
+.logo-conteiner h2{
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 4.6rem;
+    margin-top: 0.8rem;
+}
+.buttons-conteiner{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+    margin: 3.2rem 0;
+}
+.buttons-conteiner a{
+    width: 20rem;
+    height: 10.4rem;
+    border-radius: 0.8rem;
+    margin-right: 1.6rem;
+    font: 700 2.0rem Archive; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration:none ;
+    color: var(--color-button-text);
+}
+.buttons-conteiner a:first-child{
+    margin-right: 1.6rem;
+}
+.buttons-conteiner a img{
+    width: 6rem;
+}
+
+.buttons-conteiner a.study{
+ background: var(--color-primary-lighter);
+}
+.buttons-conteiner a.give-classes{
+    background: var( --color-secundary);
+}
+.buttons-conteiner a.study:hover{
+    background: var(--color-secundary-dark);
+}
+
+.total-connecti{
+    font-size:1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.total-connecti img{
+    margin-left: 0.8rem;
+}
+
+@media(min-width:1100px){
+    #page-loading-content{
+        max-width: 1100px;
+        display: grid;
+        grid-template-rows: 350px 1rf;
+        grid-template-columns: 2fr 1rf 1rf;
+        grid-template-areas: 'proffy hero hero'
+        'buttons buttons total' ;
+    }
+.logo-conteiner{
+    grid-area: proffy;
+    align-self: center;
+    margin: 0;
+    text-align: left;
+    font-size: 2rem;
+}
+.buttons-conteiner a img{
+    margin-right: 1.4rem;
+}
+.logo-conteiner img{
+   justify-self: 100%;
+}
+.hero-image{
+    grid-area: hero;
+    justify-content: end;
+}
+.buttons-conteiner{
+    grid-area: buttons;
+    justify-content: flex-start;
+}
+.buttons-conteiner a{
+    font-size: 2.4rem;
+}
+.total-connecti{
+    grid-area: total;
+}
+
+}
