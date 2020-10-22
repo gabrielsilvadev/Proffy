@@ -7,6 +7,7 @@ import Teacher from './pages/teacher/teacherlist';
 
 function Routes(){
     return(
+        
         <BrowserRouter>
         <Route  path='/' exact component={Loading}/>
         <Route  path='/study' component={Teacher}/>
